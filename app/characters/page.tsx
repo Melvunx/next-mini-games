@@ -41,8 +41,55 @@ export default async function CharactersPage() {
             id="name"
             placeholder="Nom"
             className="rounded-lg border border-indigo-500 bg-slate-400 p-2 text-lg italic tracking-wider transition-colors placeholder:italic placeholder:tracking-widest placeholder:text-pink-500/60 hover:bg-slate-600"
+            required
           />
         </div>
+        <div className="flex flex-col items-center">
+          <label
+            htmlFor="attack"
+            className="font-mono font-bold  tracking-wide text-black"
+          >
+            Dégats du personnage
+          </label>
+          <input
+            type="number"
+            name="attack"
+            id="attack"
+            min={10}
+            className="rounded-lg border border-indigo-500 bg-slate-400 p-2 text-lg italic tracking-wider transition-colors placeholder:italic placeholder:tracking-widest placeholder:text-pink-500/60 hover:bg-slate-600"
+          />
+        </div>
+        <div className="flex flex-col items-center">
+          <label
+            htmlFor="attack"
+            className="font-mono font-bold  tracking-wide text-black"
+          >
+            Défence du personnage
+          </label>
+          <input
+            type="number"
+            name="defense"
+            id="defense"
+            min={10}
+            className="rounded-lg border border-indigo-500 bg-slate-400 p-2 text-lg italic tracking-wider transition-colors placeholder:italic placeholder:tracking-widest placeholder:text-pink-500/60 hover:bg-slate-600"
+          />
+        </div>
+        <div className="flex flex-col items-center">
+          <label
+            htmlFor="healthPoints"
+            className="font-mono font-bold  tracking-wide text-black"
+          >
+            Point de vie du personnage
+          </label>
+          <input
+            type="number"
+            name="healthPoints"
+            id="hp"
+            min={100}
+            className="rounded-lg border border-indigo-500 bg-slate-400 p-2 text-lg italic tracking-wider transition-colors placeholder:italic placeholder:tracking-widest placeholder:text-pink-500/60 hover:bg-slate-600"
+          />
+        </div>
+
         <button
           type="submit"
           className="rounded-lg bg-black p-2 font-bold text-white shadow-lg transition-colors hover:bg-white hover:text-black"

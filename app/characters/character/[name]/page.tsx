@@ -26,6 +26,9 @@ export default async function CharacterPage({
           Attaque: {character.attack}
         </li>
         <li className="rounded-lg bg-gray-300 p-3 text-black">
+          Defence: {character.defense}
+        </li>
+        <li className="rounded-lg bg-gray-300 p-3 text-black">
           Hp: {character.healthPoints}
         </li>
         <li className="rounded-lg bg-gray-300 p-3 text-black">
